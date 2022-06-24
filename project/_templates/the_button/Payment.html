@@ -1,0 +1,37 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+     Final Payoff Task 3
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+<div class="card-body">
+        We are almost done with the experiment, thank you for participating! Here is a summary of the final payoff of Task 3:
+    <br><br>
+<table style="width:500px;" class="table table-bordered table-hover table-sm">
+
+  <thead class="thead-light">
+  <tr>
+    <th></th>
+    <th>You</th>
+    <th> Charity (Red Cross)</th>
+  </tr>
+  </thead>
+    <tr>
+    <td>Task 3</td>
+    <td>{{ payoff2_self }}</td>
+    <td>{{ payoff2_charity }}</td>
+
+  </tr>
+
+</table>
+
+
+</div></div><br>
+{% next_button %}
+
+{% endblock %}
+

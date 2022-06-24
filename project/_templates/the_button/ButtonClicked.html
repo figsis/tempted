@@ -1,0 +1,29 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load otree %}
+
+{% block title %}
+    Task 2
+{% endblock %}
+
+{% block styles %}
+    {% include 'snippets/Button_style.html' %}
+
+{% endblock %}
+
+{% block content %}
+  <h5>You clicked the button. Please wait until the page submits.</h5>
+ <br><br>
+<div class="col-12">
+      <button name="button" value="True" class="btn btn--action" disabled><br>
+          <br><p> You clicked this button: </p><br><br>
+          <h4>You: {{ Constants.optionB }}<br></h4>
+
+          <br><br><br>
+
+        </button></div>
+    <br><br><br>
+
+</div>
+
+{% endblock %}
